@@ -1,0 +1,16 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+
+/{
+    behaviors {
+        t_gui_tab: t_gui_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T_GUI_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp LG(TAB)>;
+
+            tapping-term-ms = <200>;
+        };
+    };
+};
